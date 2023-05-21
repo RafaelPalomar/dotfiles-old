@@ -5,3 +5,5 @@ emacs
 alacritty
 ttf-terminus-nerd
 polybar
+mpd
+ncmpcpp

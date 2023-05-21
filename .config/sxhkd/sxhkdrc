@@ -15,7 +15,7 @@ super + alt + {h,j,k,l}
     bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # Terminal
-super + Return
+super + apostrophe
   $TERMINAL
 
 # Editor

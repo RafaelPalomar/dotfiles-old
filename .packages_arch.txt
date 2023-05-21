@@ -8,3 +8,6 @@ polybar
 mpd
 ncmpcpp
 picom
+python-pywal
+calc
+networkmanager-dmenu

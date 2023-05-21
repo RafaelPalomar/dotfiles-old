@@ -45,3 +45,7 @@ super + Escape
 # Launch rofi
 super + d
     rofi -show drun
+
+# Restart XOrg
+super + alt + BackSpace
+    pkill Xorg

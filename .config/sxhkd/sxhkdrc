@@ -30,13 +30,13 @@ super + s
 super + t
     bspc node -t tiled
 
-# Make the current window fullscreen
-super + f
-    bspc node -t fullscreen
+# Toggle fullscreen
+super +f
+	  bspc node -t "~fullscreen"
 
-# Make the current window pseudo_tiled
-super + p
-    bspc node -t pseudo_tiled
+# Set the window state
+super + {t,shift + t,s}
+	  bspc node -t {tiled,pseudo_tiled,floating}
 
 # Restart bspwm
 super + Escape
@@ -49,3 +49,21 @@ super + d
 # Restart XOrg
 super + alt + BackSpace
     pkill Xorg
+
+# Reload sxhkd
+alt + shift + r
+	pkill -USR1 -x sxhkd
+
+# Quit/Restart BSPWM
+control + alt + {q,r}
+	bspc {quit 1, wm -r}
+
+# close and kill
+super + {_,shift + }q
+    bspc node -{c,k}
+
+super + m
+      $TERMINAL --class TermApp,TermApp --title nmtui --command ncmpcpp
+
+super + n
+      $TERMINAL --class TermApp,TermApp --title nmtui --command nmtui

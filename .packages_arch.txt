@@ -1,0 +1,7 @@
+bspwm
+sxhkd
+rofi
+emacs
+alacritty
+ttf-terminus-nerd
+polybar

@@ -1,0 +1,53 @@
+[bar/mybar]
+monitor = ${env:MONITOR:LVDS1}
+width = 100%
+height = 30
+radius = 0.0
+fixed-center = true
+
+background = #1e222a
+foreground = #a89984
+
+border-color = #1e222a
+border-size = 0
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "TerminessNerdFont:size=10;3"
+
+modules-left = bspwm
+modules-center = date
+modules-right = volume battery powermenu
+
+[module/bspwm]
+type = internal/bspwm
+
+[module/date]
+type = internal/date
+interval = 5
+date = "%Y-%m-%d"
+time = "%H:%M"
+label = "%{T3}%date% %time%%{T-}"
+
+[module/volume]
+type = internal/alsa
+master-mixer = Master
+speaker-mixer = Speaker
+headphone-mixer = Headphone
+interval = 5
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+interval = 5
+
+[module/powermenu]
+type = custom/script
+exec = echo ""
+click-left = "rofi -show power-menu -modi power-menu:rofi-power-menu.sh"

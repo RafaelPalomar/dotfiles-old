@@ -1,0 +1,16 @@
+# Font configuration (changes require restart)
+font:
+  # The normal (roman) font face to use.
+  normal:
+    family: "TerminessNerdFont"
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: "TerminessNerdFont"
+    style: Bold
+
+  # The italic font face
+  italic:
+    family: "TerminessNerdFont"
+    style: Italic

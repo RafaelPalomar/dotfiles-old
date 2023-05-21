@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# Set wallpaper
+feh --bg-scale ~/Wallpapers/the_wallpaper.jpg
+
+# bspwm settings
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+bspc rule -a Gimp desktop=^8 follow=on floating=on
+bspc rule -a Chromium desktop=^2
+bspc rule -a mplayer2 floating=on
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+bspc config border_width 2
+bspc config window_gap 12
+
+bspc config split_ratio 0.52
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+# Make the current window floating
+super + s
+    bspc node -t floating
+
+# Make the current window tiled
+super + t
+    bspc node -t tiled
+
+# Make the current window fullscreen
+super + f
+    bspc node -t fullscreen
+
+# Make the current window pseudo_tiled
+super + p
+    bspc node -t pseudo_tiled

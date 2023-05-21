@@ -20,4 +20,4 @@ bspc config borderless_monocle true
 bspc config gapless_monocle true
 
 # Launch Polybar
-polybar mybar &
+${HOME}/.config/polybar/launch.sh --docky

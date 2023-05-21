@@ -67,3 +67,6 @@ super + m
 
 super + n
       $TERMINAL --class TermApp,TermApp --title nmtui --command nmtui
+
+super + r 
+      $TERMINAL --class TermApp,TermApp --title nmtui --command lf 

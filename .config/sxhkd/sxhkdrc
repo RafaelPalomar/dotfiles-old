@@ -1,0 +1,23 @@
+# focus or send to desktop
+super + {_,shift + }{1-9,0}
+    bspc {desktop -f,node -d} '^{1-9,10}'
+
+# swap the current node and the biggest node
+super + g
+    bspc node -s biggest
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+    bspc node -{f,s} {west,south,north,east}
+
+# move/resize
+super + alt + {h,j,k,l}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# Terminal
+super + Return
+  $TERMINAL
+
+# Editor
+super + e
+  $EDITOR

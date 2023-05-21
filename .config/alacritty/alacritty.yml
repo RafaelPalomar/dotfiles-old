@@ -14,3 +14,6 @@ font:
   italic:
     family: "TerminessNerdFont"
     style: Italic
+
+shell:
+  program: zsh

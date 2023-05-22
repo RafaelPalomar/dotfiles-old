@@ -16,3 +16,8 @@ ttf-terminus-nerd
 xclip
 xdg-user-dirs
 xdotool
+ffmpegthumbnailer
+ImageMagick
+poppler
+epub-thumbnailer
+wkhtmltopdf

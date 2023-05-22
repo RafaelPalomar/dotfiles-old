@@ -11,3 +11,4 @@ picom
 python-pywal
 calc
 networkmanager-dmenu
+redshift

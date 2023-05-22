@@ -95,3 +95,7 @@ XF86MonBrightnessDown
 
 super + a
 	alacritty --class TermApp,TermApp --title pulsemixer --command pulsemixer
+
+# Screenshot
+Print
+    ~/.local/bin/screenshot.sh

@@ -19,14 +19,14 @@ R Chromium desktop=^2
 R mplayer2 floating=on
 R Kupfer.py focus=on
 R Screenkey manage=off
-R zoom state=floating center=on follow=on border=off
+R zoom state=floating center=on follow=on border=off desktop="^10"
 
-bspc config border_width 2
-bspc config window_gap 12
+C border_width 2
+C window_gap 12
 
-bspc config split_ratio 0.52
-bspc config borderless_monocle true
-bspc config gapless_monocle true
+C split_ratio 0.52
+C borderless_monocle true
+C gapless_monocle true
 
 termAppRatio=0.75
 screenwidth=$(xdpyinfo | awk -F'[ x]+' '/dimensions:/{print $3}')
@@ -37,7 +37,6 @@ windowx=$( echo "${screenwidth}/2.0 - ${windowwidth}/2.0"| bc)
 windowy=$( echo "${screenheight}/2.0 - ${windowheight}/2.0" | bc)
 
 R TermApp state=floating rectangle=${windowwidth%%.*}x${windowheight%%.*}+$windowx+$windowy
-
 
 # Launch Polybar
 ${HOME}/.config/polybar/launch.sh --docky

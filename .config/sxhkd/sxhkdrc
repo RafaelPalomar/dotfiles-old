@@ -63,10 +63,35 @@ super + {_,shift + }q
     bspc node -{c,k}
 
 super + m
-      $TERMINAL --class TermApp,TermApp --title nmtui --command ncmpcpp
+      $TERMINAL --class TermApp,TermApp --title ncmcpp --command ncmpcpp
 
 super + n
       $TERMINAL --class TermApp,TermApp --title nmtui --command nmtui
 
 super + r 
-      $TERMINAL --class TermApp,TermApp --title nmtui --command lf 
+      $TERMINAL --class TermApp,TermApp --title lf --command lf
+
+# Multimedia keys
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
+  # pactl -- set-sink-volume 0 +5%
+
+# Still muøltimedia
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
+  # pactl -- set-sink-volume 0 -5%
+
+# still
+XF86AudioMute
+  amixer -D pulse sset Master toggle-mute
+
+# Brightness up
+XF86MonBrightnessUp
+  light -A 10
+
+# And brightness down
+XF86MonBrightnessDown
+  light -U 10
+
+super + a
+	alacritty --class TermApp,TermApp --title pulsemixer --command pulsemixer

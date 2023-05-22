@@ -71,6 +71,9 @@ super + n
 super + r 
       $TERMINAL --class TermApp,TermApp --title lf --command lf
 
+super + w
+      $TERMINAL --class TermApp,TermApp --title taskwarrior-tui --command taskwarrior-tui
+
 # Multimedia keys
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -99,3 +102,11 @@ super + a
 # Screenshot
 Print
     ~/.local/bin/screenshot.sh
+
+# Define the available layouts
+set $layouts us es no
+set $layoutIndex 0
+
+# Rotate between layouts with Super + Space
+super + space
+      kb-layout-next.sh

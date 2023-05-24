@@ -7,7 +7,7 @@ CHOICE=$(echo -e $CHOICES | rofi -no-config -no-lazy-grab -dmenu -p "Screenshot 
 case $CHOICE in
   Fullscreen)
     FILE=$(mktemp /tmp/screenshot.XXXXXX.png)
-    maim $FILE
+    maim --delay=1 $FILE
     ;;
   Window)
     FILE=$(mktemp /tmp/screenshot.XXXXXX.png)

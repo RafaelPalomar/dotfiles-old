@@ -3,6 +3,6 @@ source /usr/share/mutt-wizard/mutt-wizard.muttrc
 source /home/rafael/.config/mutt/accounts/palomar.research@gmail.com.muttrc
 macro index,pager i1 '<sync-mailbox><enter-command>source /home/rafael/.config/mutt/accounts/palomar.research@gmail.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to palomar.research@gmail.com"
 
-
 # mutt2task
 macro index,pager t "<pipe-message>mutt2task.py<enter>"
+

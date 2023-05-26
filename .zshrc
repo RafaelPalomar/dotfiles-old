@@ -112,6 +112,8 @@ export EDITOR="/usr/bin/emacsclient -c"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
+alias sgpt='OPENAI_API_KEY=$(pass shell-gpt-api-key) sgpt'
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

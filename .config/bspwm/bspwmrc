@@ -23,6 +23,7 @@ R zoom state=floating center=on follow=on border=off desktop="^10"
 R Emacs state=tiled follow=on desktop="^1"
 R Alacritty state=tiled follow=on desktop="^2"
 R firefox state=tiled follow=on desktop="^3"
+R Neomutt state=tiled follow=on desktop="^4"
 
 
 C border_width 2

@@ -63,7 +63,7 @@ super + {_,shift + }q
     bspc node -{c,k}
 
 super + m
-      $TERMINAL --class TermApp,TermApp --title ncmcpp --command ncmpcpp
+    sh -c 'if pgrep neomutt ; then bspc desktop -f 4 ; else "$TERMINAL" --class Neomutt,Neomutt --title neomutt --command neomutt ; fi'
 
 super + n
       $TERMINAL --class TermApp,TermApp --title nmtui --command nmtui

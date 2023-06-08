@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Zathura
+Comment=PDF Viewer
+Exec=zathura %f
+Terminal=false
+Type=Application
+MimeType=application/pdf;
+Icon=zathura
+Categories=Office;Viewer;Graphics;2DGraphics;VectorGraphics;

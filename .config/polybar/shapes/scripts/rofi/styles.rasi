@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:							"Terminus 9";
+	font:							"Iosevka Nerd Font 10";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
@@ -36,10 +36,19 @@ window {
 
 prompt {
     enabled: 						true;
-	padding: 						8px 15px 10px 15px;
+	padding: 						10px 15px 10px 15px;
 	background-color: 				@bg1;
 	text-color: 					#FFFFFF;
-	font:							"Terminus 9";
+	font:							"Iosevka Nerd Font 10";
+}
+
+textbox-prompt-colon {
+	padding: 						10px 15px 10px 15px;
+	font:							"Iosevka Nerd Font 10";
+	background-color: 				@bg1;
+	text-color: 					#FFFFFF;
+	expand: false;
+	str: "";
 }
 
 entry {

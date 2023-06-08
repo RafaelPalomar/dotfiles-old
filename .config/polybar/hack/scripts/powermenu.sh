@@ -20,8 +20,8 @@ logout=" Logout"
 # Confirmation
 confirm_exit() {
 	rofi -dmenu\
-		-no-config\
-        -i\
+        -no-config\
+		-i\
 		-no-fixed-num-lines\
 		-p "Are You Sure? : "\
 		-theme $dir/confirm.rasi

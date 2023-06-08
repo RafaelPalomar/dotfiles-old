@@ -20,8 +20,8 @@ logout=" Logout"
 # Confirmation
 confirm_exit() {
 	rofi -dmenu\
-		-no-config\
-        -i\
+        -no-config\
+		-i\
 		-no-fixed-num-lines\
 		-p "Are You Sure? : "\
 		-theme $dir/confirm.rasi
@@ -62,7 +62,10 @@ case $chosen in
 			i3lock
 		elif [[ -f /usr/bin/betterlockscreen ]]; then
 			betterlockscreen -l
+		elif [[ -f /usr/bin/betterlockscreen ]]; then
+            slock
 		fi
+
         ;;
     $suspend)
 		ans=$(confirm_exit &)

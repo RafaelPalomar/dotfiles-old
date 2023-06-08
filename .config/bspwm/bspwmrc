@@ -46,5 +46,8 @@ R TermApp state=floating rectangle=${windowwidth%%.*}x${windowheight%%.*}+$windo
 # Launch Polybar
 ${HOME}/.config/polybar/launch.sh --docky
 
+# Launch bluetooth widget
+blueberry-tray
+
 # Launch dropbox
 dropbox&

@@ -15,8 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -84,10 +83,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=${PATH}:${HOME}/.config/emacs/bin:${HOME}/.local/bin
-export TERMINAL=/usr/bin/alacritty
-export EDITOR="/usr/bin/emacsclient -c"
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -111,10 +106,10 @@ export EDITOR="/usr/bin/emacsclient -c"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
-alias sgpt='OPENAI_API_KEY=$(pass shell-gpt-api-key) sgpt'
 
+alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
+
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-

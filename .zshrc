@@ -85,6 +85,11 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export PATH=${PATH}:${HOME}/.config/emacs/bin:${HOME}/.local/bin
+export TERMINAL=/usr/bin/alacritty
+export EDITOR="/usr/bin/emacsclient -c"
+export OPENAI_API_KEY=$(pass shell-gpt-api-key)
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 

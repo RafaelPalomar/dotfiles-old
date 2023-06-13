@@ -108,7 +108,6 @@
   (setq org-ref-default-bibliography '("~/Dropbox/bibliography/bibfile.bib"))
   (setq org-ref-pdf-directory "~/Dropbox/bibliography/pdfs/"))
 
-
 (after! org
   (require 'org-ref))
 
@@ -135,3 +134,6 @@
                     :user "default")))
 
   (add-hook 'server-after-make-frame-hook #'fetch-gptel-api-key))
+
+(after! org
+  (require 'ox-reveal))

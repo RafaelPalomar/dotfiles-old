@@ -23,6 +23,7 @@ xdg-user-dirs
 xdotool
 ffmpegthumbnailer
 poppler
+openconnect
 xorg-xinit
 xorg-server
 xorg-xsetroot

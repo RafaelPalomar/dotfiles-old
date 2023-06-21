@@ -28,3 +28,4 @@ xorg-xinit
 xorg-server
 xorg-xsetroot
 zathura
+scrot

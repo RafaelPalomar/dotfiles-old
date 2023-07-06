@@ -16,4 +16,4 @@ export PATH=${PATH}:${HOME}/.config/emacs/bin:${HOME}/.local/bin
 export TERMINAL=/usr/bin/alacritty
 export EDITOR="/usr/bin/emacsclient -c"
 export OPENAI_API_KEY=$(pass shell-gpt-api-key)
-export XDG_DATA_DIRS=${XDG_DATA_DIRS}:/var/lib/flatpak/exports/share:/home/rafael/.local/share/flatpak/exports/share
+export XDG_DATA_DIRS=${XDG_DATA_DIRS}:/usr/share:/var/lib/flatpak/exports/share:/home/rafael/.local/share/flatpak/exports/share

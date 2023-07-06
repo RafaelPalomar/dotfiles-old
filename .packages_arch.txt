@@ -29,3 +29,9 @@ xorg-server
 xorg-xsetroot
 zathura
 scrot
+zsh
+ttf-firacode-nerd
+ripgrep
+fd
+ttf-fira-code
+lf

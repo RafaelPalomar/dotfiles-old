@@ -1,1 +1,3 @@
 autofs
+pinentry-rofi
+synergy1-git

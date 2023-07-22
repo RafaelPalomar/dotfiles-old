@@ -55,6 +55,7 @@
 (package! org-ref)
 (package! org-roam)
 (package! ox-reveal)
+(package! ob-mermaid)
 
 ; From https://github.com/iyefrat/doom-emacs/commit/bd944dc318efe2dfb00c1107ca6d70797dad1331
 ; Due to https://github.com/doomemacs/doomemacs/issues/7191
@@ -64,3 +65,7 @@
     ; and the current forge commit (but forge does have an upstream fix),
     ; pinned as a temporary measure to prevent user breakages
 (package! closql :pin "0a7226331ff1f96142199915c0ac7940bac4afdd")
+
+; Org-transclusion. This allows to include org-fragments from other org-files.
+; very useful with org-roam
+(package! org-transclusion)

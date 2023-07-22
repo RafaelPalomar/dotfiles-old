@@ -137,3 +137,15 @@
 
 (after! org
   (require 'ox-reveal))
+
+(require 'ob-mermaid)
+(setq org-babel-mermaid-cli-path "/path/to/your/mermaid.cli.js")
+
+(use-package! org-transclusion
+  :after org
+  :init
+  (map!
+   :map global-map "<f12>" #'org-transclusion-add
+   :leader
+   :prefix "n"
+   :desc "Org Transclusion Mode" "t" #'org-transclusion-mode))

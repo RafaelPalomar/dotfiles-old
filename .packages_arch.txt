@@ -37,3 +37,4 @@ ttf-fira-code
 lf
 taskwarrior-tui
 timew
+npm

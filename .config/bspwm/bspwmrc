@@ -24,6 +24,7 @@ R Emacs state=tiled follow=on desktop="^1"
 R Alacritty state=tiled follow=on desktop="^2"
 R firefox state=tiled follow=on desktop="^3"
 R Neomutt state=tiled follow=on desktop="^4"
+R Slicer follow=off desktop="^9"
 
 
 C border_width 2

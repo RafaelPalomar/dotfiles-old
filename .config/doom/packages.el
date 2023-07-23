@@ -69,3 +69,4 @@
 ; Org-transclusion. This allows to include org-fragments from other org-files.
 ; very useful with org-roam
 (package! org-transclusion)
+(package! org-noter)

@@ -174,7 +174,7 @@
         :desc "rafaelpalomar/org-capture-slipbox" "<tab>" #'rafaelpalomar/org-capture-slipbox
         :desc "org-roam-capture" "c" #'org-roam-capture)
   (setq org-roam-directory (file-truename "~/Dropbox/Org-Roam/")
-        org-roam-database-connector 'emacs-sqlite-builtin
+        ;org-roam-database-connector 'emacs-sqlite-builtin
         org-roam-db-gc-threshold most-positive-fixnum
         org-id-link-to-org-use-id t)
   :config

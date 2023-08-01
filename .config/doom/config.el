@@ -112,8 +112,8 @@
 ;;   (require 'org-ref))
 
 
-(setq! bibtex-completion-bibliography '("~/Dropbox/org-roam/library.bib"))
-(setq! citar-bibliography '("~/Dropbox/org-roam/library.bib"))
+(setq! bibtex-completion-bibliography '("~/Dropbox/org-roam/library/library.bib"))
+(setq! citar-bibliography '("~/Dropbox/org-roam/library/library.bib"))
 (setq! org-roam-directory (file-truename "~/Dropbox/org-roam/"))
 
 ;; The following has been extracted from https://jethrokuan.github.io/org-roam-guide/

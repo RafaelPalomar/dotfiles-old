@@ -70,3 +70,4 @@
 ; very useful with org-roam
 (package! org-transclusion)
 (package! org-noter)
+(package! nov)

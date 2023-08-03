@@ -15,7 +15,7 @@ feh --bg-scale ~/Wallpapers/the_wallpaper.jpg
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 R Gimp desktop=^8 follow=on floating=on
-R Chromium desktop=^2
+R Chromium desktop=^3
 R mplayer2 floating=on
 R Kupfer.py focus=on
 R Screenkey manage=off
@@ -25,6 +25,7 @@ R Alacritty state=tiled follow=on desktop="^2"
 R firefox state=tiled follow=on desktop="^3"
 R Neomutt state=tiled follow=on desktop="^4"
 R Slicer follow=off desktop="^9"
+R Thunar state=floating
 
 
 C border_width 2

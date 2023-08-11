@@ -134,11 +134,14 @@
          (file+head "articles/${title}.org" "#+title: ${title}\n#+filetags: :article:\n")
          :immediate-finish t
          :unnarrowed t)
-        ("s" "slipbox" entry  (file "~/Dropbox/org-roam/inbox.org")
-         "* %?\n")
+        ("s" "slipbox" plain "%?"
+         :if-new (file+head "slipbox/${slug}.org"
+                            "* %?\n")
+         :immediate-finish t
+         :unnarrowed t)
         ))
 
-(cl-defmethod org-roam-node-type ((node org-roam-node))
+(defun my-org-roam-node-type (node)
   "Return the TYPE of NODE."
   (condition-case nil
       (file-name-nondirectory

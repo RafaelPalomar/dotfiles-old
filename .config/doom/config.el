@@ -174,3 +174,22 @@
                          :info (list :citekey (car keys-entries))
                          :node (org-roam-node-create :title title)
                          :props '(:finalize find-file))))
+(require 'ox-reveal)
+
+(use-package! auth-source
+  :config
+  (add-to-list 'auth-sources "~/.authinfo.gpg")
+
+  (defun fetch-gptel-api-key ()
+    "Retrieve the OpenAI API key from auth-source."
+    (setq gptel-api-key
+          (funcall #'auth-source-pick-first-password
+                   :host "api.openai.com"
+                   :user "default")))
+
+  (defun fetch-gptel-api-key-once ()
+    (unless (boundp 'gptel-api-key)
+      (fetch-gptel-api-key)))
+
+  ;; Fetch API key when a new frame is created using emacsclient
+  (add-hook 'server-after-make-frame-hook #'fetch-gptel-api-key-once))
